@@ -48,15 +48,15 @@ const SignUpPage = () => {
               >
                 <MessageSquare className="size-6 text-primary" />
               </div>
-              <h1 className="text-2xl font-bold mt-2">Create Account</h1>
-              <p className="text-base-content/60">Get started with your free account</p>
+              <h1 className="text-2xl font-bold mt-2">Δημιουργία Λογαριασμού</h1>
+              <p className="text-base-content/60">Ξεκινήστε με το δωρεάν λογαριασμό σας</p>
             </div>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="form-control">
               <label className="label">
-                <span className="label-text font-medium">Full Name</span>
+                <span className="label-text font-medium">Όνοματεπώνυμο</span>
               </label>
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -92,7 +92,7 @@ const SignUpPage = () => {
 
             <div className="form-control">
               <label className="label">
-                <span className="label-text font-medium">Password</span>
+                <span className="label-text font-medium">Κωδικός</span>
               </label>
               <div className="relative">
                 <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -123,19 +123,19 @@ const SignUpPage = () => {
               {isSigningUp ? (
                 <>
                   <Loader2 className="size-5 animate-spin" />
-                  Loading...
+                  Φόρτωση...
                 </>
               ) : (
-                "Create Account"
+                "Δημιουργία Λογαριασμού"
               )}
             </button>
           </form>
 
           <div className="text-center">
             <p className="text-base-content/60">
-              Already have an account?{" "}
+              Έχετε ήδη λογαριασμό;{" "}
               <Link to="/login" className="link link-primary">
-                Sign in
+                Σύνδεση
               </Link>
             </p>
           </div>
@@ -145,8 +145,8 @@ const SignUpPage = () => {
       {/* right side */}
 
       <AuthImagePattern
-        title="Join our community"
-        subtitle="Connect with friends, share moments, and stay in touch with your loved ones."
+        title="Συνδεθείτε στην κοινότητά μας"
+        subtitle="Συνδεθείτε με τους φίλους σας, μοιραστείτε στιγμές και διατηρήστε την επικοινωνία με τους αγαπημένους σας."
       />
     </div>
   );
